@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".full_descp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/foodImg"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ilish_curry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+
+        android:id="@+id/foodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Ilish Curry (Hilsa Curry)"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ScrollView
+
+        android:layout_below="@+id/foodTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodTitle">
+
+                        <TextView
+                            android:id="@+id/fullDescp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="30dp"
+                            android:fontFamily="@font/baloo_paaji_2"
+                            android:text="The majority of people in Bangladesh consume fish on a regular basis. Hilsa can be made in a number of different ways. Ilish Curry is the most common way to enjoy this delectable fish in Bengali cuisine. It’s a hearty meal of Hilsa fish cooked in a savory mustard sauce and served over white rice. The mustard is spiced with a variety of spices to give it a spicy flavor. When the mustard has thickened to the consistency of gravy, add the Hilsa fish and cook until tender. This is a tasty dish that is popular throughout the country."
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+    </ScrollView>
+
+
+</RelativeLayout>
